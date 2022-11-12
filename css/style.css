@@ -1116,7 +1116,7 @@ body {
   margin: 15px 0 10px;
 }
 .statists .category .item h3 {
-  font-size: 20px;
+  font-size: 22px;
   color: white;
   margin: 0;
   margin-top: 20px;
@@ -1143,8 +1143,7 @@ body {
   height: 100%;
 }
 .statists img {
-  /* z-index: 280025; */
-  width: 70px;
+  width: 90px;
 }
 @MEDIA(max-width: 576px) {
   .statists .category .item img {
@@ -1414,7 +1413,7 @@ body {
   position: relative;
   width: 130px;
   height: 130px;
-  margin: 0 -5px;
+  margin: 0 -6px;
 }
 .infinity .container .circle span {
   position: absolute;
