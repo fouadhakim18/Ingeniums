@@ -416,12 +416,12 @@ header .touch:hover {
 }
 /* End Header  */
 body {
-  background: url(/img/background.webp);
+  background: url(../img/background.webp);
   background-size: cover;
 }
 /* start landing  */
 .landing {
-  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/img/LANDING.jpg);
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/LANDING.jpg);
   min-height: calc(100vh - 64.14px);
   background-size: cover;
   color: white;
@@ -550,26 +550,7 @@ body {
     right: 0px;
   }
 }
-.dots {
-  position: absolute;
-  background-image: url(../img/dots.png);
-  height: 186px;
-  width: 204px;
-  background-repeat: no-repeat;
-}
-.dots-up {
-  bottom: 50px;
-  right: 0;
-}
-.dots-down {
-  top: 100px;
-  left: 0;
-}
 @media (max-width: 710px) {
-  .landing .deco,
-  .dots {
-    display: none;
-  }
   .landing .info {
     width: 90%;
   }
@@ -670,7 +651,7 @@ body {
 
 /* start events  */
 .events {
-  background: url(/img/shutterstock_359492192.webp);
+  background: url(../img/shutterstock_359492192.webp);
   padding-top: 50px;
   padding-bottom: 50px;
   position: relative;
@@ -913,7 +894,7 @@ body {
 
 /* start contact  */
 .footer {
-  background: url(/img/shutterstock_359492192.webp);
+  background: url(img/shutterstock_359492192.webp);
 }
 .footer .container {
   display: grid;
