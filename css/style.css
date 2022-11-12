@@ -605,7 +605,7 @@ body {
   font-size: 35px;
 }
 .about-info h3 span {
-  color: var(--main-color-alt);
+  color: var(--main-color);
 }
 @media (max-width: 800px) {
   .about-info {
@@ -1357,20 +1357,22 @@ body {
   border-radius: 50%;
 }
 .sponsors .partner {
-  color: white;
-  background: var(--main-color);
   width: fit-content;
-  padding: 15px;
-  border-radius: 16px;
   margin: auto;
   cursor: pointer;
   margin-top: 70px;
-  transition: .3s;
 }
 .sponsors .partner h2 {
   margin: 0;
 }
-.sponsors .partner:hover {
+.sponsors .partner a {
+  color: white;
+  background: var(--main-color);
+  padding: 15px;
+  border-radius: 16px;
+  transition: .3s;
+}
+.sponsors .partner:hover a {
   background-color: var(--main-color-alt);
 }
 /* end sponsors  */
