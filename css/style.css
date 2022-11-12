@@ -371,9 +371,6 @@ header .icons-humb {
     width: 80px !important;
     top: 84% !important;
   }
-  .landing .info  {
-    width: 100%;
-  }
   .landing p {
     font-size: 25px !important;
   }
@@ -460,12 +457,16 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 52%;
 }
 .landing h2 {
   font-size: 55px;
   font-family: 'Dancing Script', cursive;
   margin-top: 15px;
   background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .landing h3 {
   color: var(--main-color-alt);
@@ -553,9 +554,14 @@ body {
     right: 0px;
   }
 }
-@media (max-width: 710px) {
+@media (max-width: 992px) {
   .landing .info {
-    width: 90%;
+    width: 100%;
+  }
+}
+@media (max-width: 614px) {
+  .landing h2 {
+    display: block;
   }
 }
 /* end landing  */
@@ -1409,7 +1415,7 @@ body {
     filter: hue-rotate(360deg);
   }
 }
-.infinity .container {
+.infinity .container, .infinity-2 .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1420,7 +1426,7 @@ body {
   height: 130px;
   margin: 0 -6px;
 }
-.infinity .container .circle span {
+.infinity .container .circle span, .infinity-2 .container .circle span {
   position: absolute;
   top: 0;
   left: 0;
@@ -1455,10 +1461,55 @@ body {
     transform: scale(0.1);
   }
 }
-.infinity .container .circle:nth-child(2) {
+.infinity .container .circle:nth-child(2), .infinity-2 .container .circle:nth-child(2) {
   transform: rotate(-180deg);
 }
-.infinity .container .circle:nth-child(2) span::before {
+.infinity .container .circle:nth-child(2) span::before, .infinity-2 .container .circle:nth-child(2) span::before {
   animation-delay: calc(-0.1s * var(--i));
 }
 /* end infinty  */
+
+
+.infinity-2 {
+  background-color: black;
+  animation: animateColor 8S linear infinite;
+  display: inline-block;
+  margin-left: 9px;
+  margin-top: 5px;
+}
+.infinity-2 .container {
+  width: fit-content;
+}
+.infinity-2 .container .circle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0 -2px;
+}
+.infinity-2 .container .circle span::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: calc(50% - 7.5px);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #00ff0a;
+  box-shadow: 0 0 10px #00ff0a,
+  0 0 20px #00ff0a,
+  0 0 40px #00ff0a,
+  0 0 60px #00ff0a,
+  0 0 80px #00ff0a,
+  0 0 100px #00ff0a;
+  transform: scale(0.1);
+  animation: animate 4s linear infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate {
+  0% {
+    transform: scale(1);
+  }
+  50%, 100% {
+    transform: scale(0.1);
+  }
+}
