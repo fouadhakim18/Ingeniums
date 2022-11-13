@@ -60,10 +60,6 @@ function fadeOut() {
 fadeOut();
 
 
-
-
-
-
 // events animation 
 
 const events = document.querySelectorAll(".row")
