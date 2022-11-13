@@ -508,7 +508,7 @@ body {
 }
 .landing i {
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
   right: 50%;
   transform: translate(50%);
   font-size: 30px;
