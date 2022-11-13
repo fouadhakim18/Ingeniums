@@ -425,8 +425,8 @@ body {
   min-height: calc(100vh - 64.14px);
   background-size: cover;
   color: white;
-  background-position-y: -270px;
   position: relative;
+  background-size: contain;
 }
 .home {
   padding-top: 64px;
@@ -577,9 +577,6 @@ body {
   }
   .landing .info {
     top: 48%;
-  }
-  .landing {
-    background-size: contain;
   }
   .landing h2 {
     font-size: 50px;
