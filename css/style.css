@@ -563,9 +563,6 @@ body {
   .landing h2 {
     display: block;
   }
-  .landing img.white-logo {
-    display: none;
-  }
   .landing p {
     font-size: 20px !important;
   }
@@ -589,6 +586,11 @@ body {
     top: calc(50% - 6.5px) !important;
     width: 6px !important;
     height: 6px !important;
+  }
+}
+@media (max-width: 480px) {
+  .landing img.white-logo {
+    display: none;
   }
 }
 /* end landing  */
