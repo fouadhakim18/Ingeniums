@@ -563,6 +563,36 @@ body {
   .landing h2 {
     display: block;
   }
+  .landing img.white-logo {
+    display: none;
+  }
+  .landing p {
+    font-size: 20px !important;
+  }
+  .landing .button {
+    font-size: 20px;
+  }
+  .landing i {
+    font-size: 28px;
+  }
+  .landing .info {
+    top: 48%;
+  }
+  .landing {
+    background-size: contain;
+  }
+  .landing h2 {
+    font-size: 50px;
+  }
+  .infinity-2 .container .circle {
+    width: 37px !important;
+    height: 37px !important;
+  }
+  .infinity-2 .container .circle span::before {
+    top: calc(50% - 6.5px) !important;
+    width: 6px !important;
+    height: 6px !important;
+  }
 }
 /* end landing  */
 
@@ -1472,7 +1502,7 @@ body {
 
 .infinity-2 {
   background-color: black;
-  animation: animateColor 8S linear infinite;
+  animation: animateColor 10S linear infinite;
   display: inline-block;
   margin-left: 9px;
   margin-top: 5px;
